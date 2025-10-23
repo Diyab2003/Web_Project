@@ -1,23 +1,29 @@
 <?php
 include('db.php');
 
-if(isset($_POST['delete'])){
-    $id = $_POST['id'];
-    $sql = "DELETE FROM students WHERE id=$id";
-    mysqli_query($conn, $sql);
-    echo "Record deleted successfully!";
+if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+   
+    $movie_id = mysqli_real_escape_string($conn, $_GET['id']);
+
+  
+    $sql = "DELETE FROM movies WHERE movie_id = $movie_id";
+
+    if (mysqli_query($conn, $sql)) {
+       
+        $message = "Record ID $movie_id successfully deleted!";
+        header("Location: index.php?message=" . urlencode($message));
+        exit();
+    } else {
+       
+        $error_message = "Error deleting record: " . mysqli_error($conn);
+        header("Location: index.php?error=" . urlencode($error_message));
+        exit();
+    }
+} else {
+
+    header("Location: index.php?error=" . urlencode("No movie ID specified for deletion."));
+    exit();
 }
 
-$result = mysqli_query($conn, "SELECT * FROM students");
+mysqli_close($conn);
 ?>
-<h2>Delete Student</h2>
-<form method="POST">
-<select name="id">
-<?php
-while($row = mysqli_fetch_assoc($result)){
-    echo "<option value='{$row['id']}'>{$row['name']}</option>";
-}
-?>
-</select><br><br>
-<button type="submit" name="delete">Delete</button>
-</form>

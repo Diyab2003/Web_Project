@@ -20,57 +20,32 @@ The primary goal was to build a functional, secure, and user-friendly system for
 
 ## 🛠️ Tech Stack
 
-Category
+- Server Environment: XAMPP (Local Development Environment for running PHP and MySQL.)
 
-Technology
+- Frontend/Scripting: PHP (Server-side logic, data processing, and HTML templating.)
 
-Purpose
+- Database: MySQL (Persistent storage and data management.)
 
-Server Environment
+- Styling: Custom CSS (Dark-themed, responsive interface design.)
 
-XAMPP
+- Interaction: MySQLi (Secure database connectivity.)
 
-Local Development Environment for running PHP and MySQL.
 
-Frontend/Scripting
+## ⚙️ Setup and Installation
 
-PHP
-
-Server-side logic, data processing, and HTML templating.
-
-Database
-
-MySQL
-
-Persistent storage and data management.
-
-Styling
-
-Custom CSS
-
-Dark-themed, responsive interface design.
-
-Interaction
-
-MySQLi
-
-Secure database connectivity.
-
-⚙️ Setup and Installation
-
-Prerequisites
+# Prerequisites
 
 You must have XAMPP (or a similar stack like MAMP/WAMP) installed to run the Apache server and MySQL database locally.
 
-1. Database Setup
+# 1. Database Setup
 
-Start the Apache and MySQL services in your XAMPP control panel.
+1. Start the Apache and MySQL services in your XAMPP control panel.
 
-Open your web browser and navigate to http://localhost/phpmyadmin.
+2. Open your web browser and navigate to http://localhost/phpmyadmin.
 
-Create a new database named movie_catalog.
+3. Create a new database named movie_catalog.
 
-Execute the following SQL command in the movie_catalog database to create the required table structure:
+4. Execute the following SQL command in the movie_catalog database to create the required table structure:
 
 CREATE TABLE movies (
     movie_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -81,16 +56,16 @@ CREATE TABLE movies (
 );
 
 
-2. File Placement
+# 2. File Placement
 
 Place all project files (index.php, edit.php, delete.php, reset.php, and db.php) inside a new folder (e.g., movie-app) within your XAMPP installation's root web directory (htdocs).
 
-3. Running the Application
+# 3. Running the Application
 
-Ensure Apache and MySQL are running.
+1. Ensure Apache and MySQL are running.
 
-Open your browser and navigate to the project's URL: http://localhost/movie-app/index.php.
+2. Open your browser and navigate to the project's URL: http://localhost/movie-app/index.php.
 
-✅ Core Takeaways
+## ✅ Core Takeaways
 
 This project solidified my experience in writing and executing reliable SQL queries (CREATE TABLE, INSERT, SELECT, UPDATE, DELETE, TRUNCATE) and demonstrated strong competency in building secure, transactional PHP logic for web applications.

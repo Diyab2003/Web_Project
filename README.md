@@ -2,21 +2,21 @@
 
 ## ✨ Project Overview
 
-This project is a simple, full-stack web application designed to manage a Movie Catalog. It demonstrates a core understanding of database interaction by implementing the six key SQL operations: CREATE TABLE, INSERT, SELECT, UPDATE, DELETE, and TRUNCATE.
+This project is a simple, full-stack web application designed to manage a Movie Catalog. It demonstrates a core understanding of database interaction by implementing the six key SQL operations: **CREATE TABLE**, **INSERT**,**SELECT**, **UPDATE**, **DELETE**, and **TRUNCATE**.
 
 The primary goal was to build a functional, secure, and user-friendly system for handling data records, showcasing the essential flow between the client interface and a persistent database.
 
 ## 🚀 Key Features Implemented
 
-Create (INSERT): Add new movie records (Title, Director, Year, Rating) to the database.
+- **C**reate (INSERT): Add new movie records (Title, Director, Year, Rating) to the database.
 
-Read (SELECT) & Search Option 🔍: View the complete movie catalog and efficiently search for records by title or director. This feature uses the LIKE operator to provide fuzzy matching and filtering.
+- **R**ead (SELECT) & Search Option 🔍: View the complete movie catalog and efficiently search for records by title or director. This feature uses the LIKE operator to provide fuzzy matching and filtering.
 
-Update (UPDATE): Edit existing movie details via a dedicated form.
+- **U**pdate (UPDATE): Edit existing movie details via a dedicated form.
 
-Delete (DELETE): Permanently remove movie records from the catalog.
+- **D**elete (DELETE): Permanently remove movie records from the catalog.
 
-Catalog Reset Switch (TRUNCATE) ♻️: A dedicated utility to reset the entire catalog. This feature uses the efficient TRUNCATE TABLE command to delete all data and simultaneously reset the database's auto-increment counter to 1, ensuring clean ID sequencing for new entries.
+- Catalog Reset Switch (TRUNCATE) ♻️: A dedicated utility to reset the entire catalog. This feature uses the efficient TRUNCATE TABLE command to delete all data and simultaneously reset the database's auto-increment counter to 1, ensuring clean ID sequencing for new entries.
 
 ## 🛠️ Tech Stack
 

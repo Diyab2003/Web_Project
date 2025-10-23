@@ -1,34 +1,60 @@
-🎬 Movie Catalog Manager (CRUD Application)
+## 🎬 Movie Catalog Manager (CRUD Application)
 
-Project Overview
+## ✨ Project Overview
 
 This project is a simple, full-stack web application designed to manage a Movie Catalog. It demonstrates a core understanding of database interaction by implementing the six key SQL operations: CREATE TABLE, INSERT, SELECT, UPDATE, DELETE, and TRUNCATE.
 
 The primary goal was to build a functional, secure, and user-friendly system for handling data records, showcasing the essential flow between the client interface and a persistent database.
 
-Key Features Implemented
+## 🚀 Key Features Implemented
 
 Create (INSERT): Add new movie records (Title, Director, Year, Rating) to the database.
 
-Read (SELECT) & Search Option: View the complete movie catalog and efficiently search for records by title or director. This feature uses the LIKE operator to provide fuzzy matching and filtering.
+Read (SELECT) & Search Option 🔍: View the complete movie catalog and efficiently search for records by title or director. This feature uses the LIKE operator to provide fuzzy matching and filtering.
 
 Update (UPDATE): Edit existing movie details via a dedicated form.
 
 Delete (DELETE): Permanently remove movie records from the catalog.
 
-Catalog Reset Switch (TRUNCATE): A dedicated utility to reset the entire catalog. This feature uses the efficient TRUNCATE TABLE command to delete all data and simultaneously reset the database's auto-increment counter to 1, ensuring clean ID sequencing for new entries.
+Catalog Reset Switch (TRUNCATE) ♻️: A dedicated utility to reset the entire catalog. This feature uses the efficient TRUNCATE TABLE command to delete all data and simultaneously reset the database's auto-increment counter to 1, ensuring clean ID sequencing for new entries.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-Server Environment: XAMPP (Local Development Environment)
+Category
 
-Frontend/Scripting: PHP for server-side logic and templating.
+Technology
 
-Database: MySQL for persistent storage and data management.
+Purpose
 
-Styling: Custom CSS for a dark-themed, responsive interface.
+Server Environment
 
-Interaction: Standard HTML forms and MySQLi for secure database connectivity.
+XAMPP
+
+Local Development Environment for running PHP and MySQL.
+
+Frontend/Scripting
+
+PHP
+
+Server-side logic, data processing, and HTML templating.
+
+Database
+
+MySQL
+
+Persistent storage and data management.
+
+Styling
+
+Custom CSS
+
+Dark-themed, responsive interface design.
+
+Interaction
+
+MySQLi
+
+Secure database connectivity.
 
 ⚙️ Setup and Installation
 
@@ -65,6 +91,6 @@ Ensure Apache and MySQL are running.
 
 Open your browser and navigate to the project's URL: http://localhost/movie-app/index.php.
 
-Core Takeaways
+✅ Core Takeaways
 
 This project solidified my experience in writing and executing reliable SQL queries (CREATE TABLE, INSERT, SELECT, UPDATE, DELETE, TRUNCATE) and demonstrated strong competency in building secure, transactional PHP logic for web applications.

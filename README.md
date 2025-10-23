@@ -1,4 +1,4 @@
-## 🎬 Movie Catalog Manager (CRUD Application)
+# 🎬 Movie Catalog Manager (CRUD Application)
 
 ## ✨ Project Overview
 
@@ -33,11 +33,11 @@ The primary goal was to build a functional, secure, and user-friendly system for
 
 ## ⚙️ Setup and Installation
 
-# Prerequisites
+### Prerequisites
 
 You must have XAMPP (or a similar stack like MAMP/WAMP) installed to run the Apache server and MySQL database locally.
 
-# 1. Database Setup
+### 1. Database Setup
 
 1. Start the Apache and MySQL services in your XAMPP control panel.
 
@@ -56,11 +56,11 @@ CREATE TABLE movies (
 );
 
 
-# 2. File Placement
+### 2. File Placement
 
 Place all project files (index.php, edit.php, delete.php, reset.php, and db.php) inside a new folder (e.g., movie-app) within your XAMPP installation's root web directory (htdocs).
 
-# 3. Running the Application
+### 3. Running the Application
 
 1. Ensure Apache and MySQL are running.
 
